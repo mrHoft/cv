@@ -28,8 +28,8 @@ export const menu: Record<string, { title: string; icon: string }> = {
 export const contacts = [
   {
     icon: './icons/email.svg',
-    href: 'mailto:Hoft@daytec.ru',
-    title: 'Hoft@daytec.ru',
+    href: 'mailto:mrHoft@ya.ru',
+    title: 'mrHoft@ya.ru',
   },
   {
     icon: './icons/telegram.svg',
@@ -62,12 +62,29 @@ type TExp = {
 
 export const exp: TExp[] = [
   {
+    period: '2025',
+    title: 'RSS React 2025Q1',
+    href: 'https://rs.school/',
+    projects: [
+      {
+        title: 'Restman',
+        href: 'https://restman-app.vercel.app/',
+        desc: 'React, Next',
+      },
+      {
+        title: 'Monkey Wrench characters',
+        href: 'http://195.133.52.167:3081/',
+        desc: 'TS, React, SSR, ORM',
+      },
+    ],
+  },
+  {
     period: '2024 - 2025',
     title: 'Cavex',
     projects: [
       {
-        title: 'Manipeny',
-        desc: 'Turborepo, Express, Postgresql, Vite, ⚛️React, PWA',
+        title: 'Cavex CRM',
+        desc: 'Turborepo, Express, Postgresql, Vite, React, PWA',
         href: 'https://app.nobey.ru/',
       },
     ],
@@ -79,20 +96,19 @@ export const exp: TExp[] = [
     projects: [
       {
         title: '"Прожито" project',
-        desc: 'Turborepo, Next, ⚛️React',
+        desc: 'Turborepo, Next, React',
         href: 'https://prozhito.org/',
       },
       {
         title: '"Прожито" archive',
-        desc: 'Turborepo, Next, ⚛️React',
+        desc: 'Turborepo, Next, React',
         href: 'https://archive.prozhito.org/',
       },
     ],
   },
   {
     period: '2023 - 2024',
-    title: 'RS School',
-    desc: 'Frontend JS 2023Q4',
+    title: 'RSS Frontend JS 2023Q4',
     href: 'https://rs.school/',
     projects: [
       {
@@ -103,7 +119,7 @@ export const exp: TExp[] = [
       {
         title: 'Magic seeds',
         href: 'https://magic-seeds.netlify.app/',
-        desc: 'Vite, ⚛️React, Mobx',
+        desc: 'Vite, React, Mobx',
       },
       {
         title: 'Puzzle',
@@ -121,7 +137,7 @@ export const exp: TExp[] = [
         desc: 'Vite, TS, MVC, Websocket, custom parser',
       },
       {
-        title: 'Coffe house',
+        title: 'Coffee house',
         href: 'https://rolling-scopes-school.github.io/mrhoft-JSFE2023Q4/coffee-house/',
         desc: 'layout from figma project',
       },
@@ -138,41 +154,6 @@ export const exp: TExp[] = [
     ],
   },
   {
-    period: '2023',
-    title: 'RS School',
-    desc: 'Frontend PRE-SCHOOL 2023Q2',
-    projects: [
-      {
-        title: 'Audio player',
-        href: 'https://mrhoft.github.io/RSSchool/audio-player/',
-      },
-      {
-        title: 'Eco sounds',
-        href: 'https://mrhoft.github.io/RSSchool/eco-sounds/',
-      },
-      {
-        title: 'Brooklin public library',
-        href: 'https://mrhoft.github.io/RSSchool/library/',
-      },
-      {
-        title: 'Movie search',
-        href: 'https://mrhoft.github.io/RSSchool/movie-app/',
-      },
-      {
-        title: 'Image gallery',
-        href: 'https://mrhoft.github.io/RSSchool/image-gallery/',
-      },
-      {
-        title: 'CSS meme slider',
-        href: 'https://mrhoft.github.io/RSSchool/cssMemeSlider/',
-      },
-      {
-        title: 'Rorschach game',
-        href: 'https://rorschach-game.vercel.app/',
-      },
-    ],
-  },
-  {
     period: '2022 - 2023',
     title: 'Y.Practicum',
     desc: 'Middle frontend-developer',
@@ -184,35 +165,9 @@ export const exp: TExp[] = [
         href: 'https://github.com/mrHoft/pet-chat',
       },
       {
-        title: 'web-game',
-        desc: 'TS, ⚛️React, Redux, OAuth, SSR, Node, Express, Postgres, Proxy, Helmet, Lerna, Vite, Nginx, Docker, Compose',
+        title: 'Fast Paws game',
+        desc: 'TS, React, Redux, OAuth, SSR, Node, Express, Postgres, Proxy, Helmet, Lerna, Vite, Nginx, Docker, Compose',
         href: 'https://github.com/fastPaws-game/fastPaws',
-      },
-    ],
-  },
-  {
-    period: '2011 - 2022',
-    title: 'Freelance',
-    desc: 'Fulfilling orders for development, write books, working on personal projects',
-    projects: [
-      {
-        title: 'Greet card service',
-        desc: '⚛️React, Particles, SC, Vite',
-        href: 'https://greet-card.vercel.app',
-      },
-      {
-        title: 'ESOUI: Author page',
-        desc: 'The Elder Scrolls Online UI: 10kk+ downloads',
-        href: 'https://www.esoui.com/downloads/author-23287.html',
-      },
-      {
-        title: 'MapPins.merge',
-        desc: 'Data merge service for MapPins',
-        href: 'https://github.com/mrHoft/MapPins.merge',
-      },
-      {
-        title: 'Ridero: Author page',
-        href: 'https://ridero.ru/author/khoft_nikolai_xxhhg/',
       },
     ],
   },
@@ -223,13 +178,18 @@ type TEdu = { title: string; href?: string; course?: string; desc?: string }
 export const edu: TEdu[] = [
   {
     title: 'RSSchool',
-    href: 'https://app.rs.school/certificate/nehax0ao',
-    course: 'Frontend 2023Q4',
+    href: 'https://app.rs.school/certificate/7d8czm6m',
+    course: 'NodeJS 2025Q2',
   },
   {
     title: 'RSSchool',
-    href: 'https://app.rs.school/certificate/cr6ohdtm',
-    course: 'Frontend 2023Q2',
+    href: 'https://app.rs.school/certificate/m2svb7rr',
+    course: 'React 2025Q1',
+  },
+  {
+    title: 'RSSchool',
+    href: 'https://app.rs.school/certificate/nehax0ao',
+    course: 'Frontend 2023Q4',
   },
   {
     title: 'Y.Practicum',
@@ -242,7 +202,7 @@ export const edu: TEdu[] = [
   },
   {
     title: 'Self-development',
-    desc: 'W3Schools, EnglishClass101, freecodecamp.org, codewars.com, learn.javascript, javascript.info and other. My hand book is MDN Web Docs.',
+    desc: 'W3Schools, freecodecamp.org, codewars.com, learn.javascript, javascript.info and other. My hand book is MDN Web Docs.',
   },
 ]
 
@@ -265,9 +225,9 @@ export const skills = [
     value: 80,
   },
   {
-    icon: './icons/nodejs.svg',
-    stack: ['Node.js', 'Express.js', 'Deno.js'],
-    value: 70,
+    icon: './icons/node.svg',
+    stack: ['Node.js', 'Express.js', 'Deno'],
+    value: 75,
   },
   {
     icon: './icons/react.svg',
@@ -276,8 +236,23 @@ export const skills = [
   },
   {
     icon: './icons/vue.svg',
-    stack: ['Vue', 'Vuex', 'Nuxt'],
+    stack: ['Vue', 'Nuxt'],
     value: 60,
+  },
+  {
+    icon: './icons/angular.svg',
+    stack: ['Angular'],
+    value: 60,
+  },
+  {
+    icon: './icons/redux.svg',
+    stack: ['Redux', 'MobX'],
+    value: 80,
+  },
+  {
+    icon: './icons/game.svg',
+    stack: ['Three.js', 'Pixi.js', 'Spine.js'],
+    value: 75,
   },
   {
     icon: './icons/webpack.svg',
@@ -286,12 +261,12 @@ export const skills = [
   },
   {
     icon: './icons/test.svg',
-    stack: ['Chai', 'Mocha', 'Jest'],
+    stack: ['Jest', 'Vitest'],
     value: 60,
   },
   {
     icon: './icons/sql.svg',
-    stack: ['Postgres'],
+    stack: ['Postgres', 'TypeORM', 'Strapi'],
     value: 60,
   },
   {
@@ -306,7 +281,12 @@ export const skills = [
   },
   {
     icon: './icons/cloud.svg',
-    stack: ['aws', 'Strapi'],
+    stack: ['aws'],
+    value: 50,
+  },
+  {
+    icon: './icons/llm.svg',
+    stack: ['completion', 'generate'],
     value: 50,
   },
 ]
@@ -333,8 +313,8 @@ export const projects: TProject[] = [
     title: 'Cavex CRM',
     src: './projects/cavex.jpg',
     right:
-      'Lightweight and fast crossplatform CRM: Production, Stock, Defects, Repairs, Returns, Catalog, Sales, Orders, Bids, Shipments, Accounting, Management.',
-    href: 'https://app.nobey.ru',
+      'Lightweight and fast cross-platform CRM: Production, Stock, Defects, Repairs, Returns, Catalog, Sales, Orders, Bids, Shipments, Accounting, Management.',
+    href: 'https://app.daytec.ru',
   },
   {
     id: 3,
@@ -348,6 +328,13 @@ export const projects: TProject[] = [
     title: 'Greet card',
     src: './projects/greetcard.jpg',
     href: 'https://greet-card.vercel.app/',
-    right: 'A greeting card with a message and an intaractive animation.',
+    right: 'A greeting card with a message and an interactive animation.',
+  },
+  {
+    id: 5,
+    title: 'Medley world',
+    src: './projects/medley.jpg',
+    href: 'https://medley.deno.dev/',
+    left: 'Cross-platform online game.',
   },
 ]

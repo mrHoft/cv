@@ -5,7 +5,7 @@ import { exp } from '~/const.ts'
 <template>
   <article id="exp" :class="$style.exp">
     <h2>Experience:</h2>
-    <table class="table">
+    <table :class="$style.table">
       <thead>
         <tr>
           <td :class="$style.period">Period</td>

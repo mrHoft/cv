@@ -2,5 +2,15 @@
   "editor.formatOnSave": true,
   "files.associations": {
     "*.svg.disabled": "html"
-  }
+  },
+  "cSpell.words": [
+    "cavex",
+    "gamedev",
+    "hoft",
+    "nonograms",
+    "prozhito",
+    "templator",
+    "turborepo",
+    "Прожито"
+  ]
 }

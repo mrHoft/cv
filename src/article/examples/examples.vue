@@ -52,13 +52,13 @@ const items = [
 
 .card_left {
   justify-content: flex-start;
-  border-radius: 0.5rem 0.5rem 0 0;
 }
 .card_right {
   justify-content: flex-end;
 }
 
 .card__splash {
+  color: var(--color100);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -68,10 +68,11 @@ const items = [
   box-sizing: border-box;
   background-color: #0008;
   padding: 1rem 2rem;
+  opacity: 0;
   transition: opacity 0.25s linear;
 }
 .card:hover .card__splash {
-  opacity: 0;
+  opacity: 1;
 }
 .card__splash_left {
   border-radius: 0.5rem 0 0 0.5rem;

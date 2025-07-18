@@ -32,11 +32,12 @@ import { skills } from '~/const.ts'
   flex-wrap: wrap;
 }
 .skills li {
-  flex: 1 0 calc(16% - 2rem);
+  flex: 1 0 12%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
 }
 
 .skills span {

@@ -11,7 +11,7 @@ import { contacts } from '~/const.ts'
       </div>
 
       <p>Krasnodar, ready to relocate</p>
-      <p>Frontend, Gamedev</p>
+      <p>Backend, Frontend, Gamedev</p>
       <ul id="contacts" :class="$style.contacts">
         <h2>Contacts:</h2>
         <li v-for="({ icon, title, href }, index) in contacts" :key="index">
@@ -21,7 +21,7 @@ import { contacts } from '~/const.ts'
       </ul>
     </div>
     <div :class="$style.logo">
-      <img :class="$style.avatar" src="/icons/tech_ninja.svg" alt="avatar" />
+      <img :class="$style.avatar" src="/icons/hoft.svg" alt="avatar" />
       <img :class="$style.photo" src="/images/photo.jpg" alt="photo" />
     </div>
   </article>
@@ -59,6 +59,15 @@ import { contacts } from '~/const.ts'
   position: relative;
   width: calc(min(30vw, 16rem));
   height: calc(min(30vw, 16rem));
+
+  &:hover {
+    .avatar {
+      opacity: 0;
+    }
+    .photo {
+      opacity: 1;
+    }
+  }
 }
 
 .avatar,
@@ -69,15 +78,9 @@ import { contacts } from '~/const.ts'
   width: 100%;
   border-radius: 50%;
   box-shadow: 3px 3px 3px #0008;
-  transition: opacity 0.25s ease-in;
+  transition: opacity 0.25s linear;
 }
 .photo {
   opacity: 0;
-}
-.logo:hover .avatar {
-  opacity: 0;
-}
-.logo:hover .photo {
-  opacity: 1;
 }
 </style>
