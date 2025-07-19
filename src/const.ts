@@ -23,6 +23,10 @@ export const menu: Record<string, { title: string; icon: string }> = {
     title: 'Education',
     icon: './icons/edu.svg',
   },
+  print: {
+    title: 'Print',
+    icon: './icons/print.svg',
+  },
 }
 
 export const contacts = [

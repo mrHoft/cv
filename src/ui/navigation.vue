@@ -2,6 +2,14 @@
 import { menu } from '~/const.ts'
 export default {
   setup() {
+    const onHashChange = () => {
+      if (location.hash === '#print') {
+        window.print();
+        history.replaceState(null, '', location.pathname);
+      }
+    }
+    window.addEventListener('hashchange', onHashChange)
+
     return { menu }
   },
 }
@@ -31,6 +39,12 @@ export default {
   align-self: start;
   top: 5%;
   z-index: 10;
+}
+
+@media print {
+  .aside {
+    display: none;
+  }
 }
 
 @media (max-width: 640px) {

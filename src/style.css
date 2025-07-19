@@ -92,6 +92,22 @@ article {
   padding: 1.5rem;
 }
 
+@media print {
+  body {
+    margin: 0;
+    background-image: unset;
+  }
+
+  main {
+    padding: 0;
+    background-color: unset;
+  }
+
+  #examples {
+    display: none;
+  }
+}
+
 ul {
   list-style-type: none;
   margin: 0;

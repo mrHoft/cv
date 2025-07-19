@@ -7,6 +7,12 @@
   flex: 0 0 5rem;
 }
 
+@media print {
+  .mirror {
+    display: none;
+  }
+}
+
 @media (max-width: 640px) {
   .mirror {
     display: none;

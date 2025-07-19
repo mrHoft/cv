@@ -83,4 +83,13 @@ import { contacts } from '~/const.ts'
 .photo {
   opacity: 0;
 }
+
+@media print {
+  .avatar {
+    display: none;
+  }
+  .photo {
+    opacity: unset;
+  }
+}
 </style>

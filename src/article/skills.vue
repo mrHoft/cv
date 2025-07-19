@@ -27,6 +27,12 @@ import { skills } from '~/const.ts'
   width: 100%;
 }
 
+@media print {
+  .codewars {
+    display: none;
+  }
+}
+
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -57,7 +63,7 @@ import { skills } from '~/const.ts'
   padding: calc(var(--dia-size) * 0.15);
   background: linear-gradient(var(--color20), var(--color20)) content-box,
     linear-gradient(var(--v), transparent 50%, var(--color40) 0) 0 / min(100%, (var(--p) - 50) * 100%),
-    linear-gradient(to right, var(--color00) 50%, var(--color40) 0);
+    linear-gradient(to right, var(--color10) 50%, var(--color40) 0);
   display: flex;
   justify-content: center;
   align-items: center;

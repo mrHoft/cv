@@ -36,4 +36,10 @@ import { Info, About, Skills, Experience, Education, CodeExample, Examples } fro
 .footer img {
   filter: invert(var(--color-scheme));
 }
+
+@media print {
+  .footer {
+    display: none;
+  }
+}
 </style>
