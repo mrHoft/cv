@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Navigation from './ui/navigation.vue'
 import Mirror from './ui/miror.vue'
-import { Info, About, Skills, Experience, Education, CodeExample, Examples } from './article'
+import { Info, About, Skills, Experience, Education, Examples } from './article'
 </script>
 
 <template>

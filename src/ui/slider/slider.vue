@@ -3,7 +3,7 @@ import { h, useCssModule, type VNode } from 'vue'
 
 const { items, itemsToShow = 1 } = defineProps<{
   items: Array<VNode>
-  itemsToShow?: Number
+  itemsToShow?: number
 }>()
 const showNav = itemsToShow === 1
 const counter = 1
